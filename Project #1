@@ -1,7 +1,80 @@
-Alexis Flack
-Data Analytics 
-Project #1
+#Alexis Flack
+#Data Analytics 
+#Project #1
 
+import pandas as pd
+
+df = pd.read_csv('passwords.csv')
+
+print(df)
+
+#Drop unwanted features 
+
+columns_to_remove = ['rank_alt', 'font_size']
+my_df = my_df.drop(columns=columns_to_remove)
+print(my_df)
+
+# Check for missing values
+missing_values = data.isnull().sum()
+print(missing_values)
+
+# Remove rows with missing values
+data.dropna(inplace=True)
+            
+            
+missing_values = data.isnull().sum()
+print(missing_values) 
+
+# Check for duplicates
+duplicates = data[data.duplicated()]
+
+# Display the duplicate rows
+print(duplicates)
+
+# Check the data types of each column
+data_types = data.dtypes
+print(data_types)
+
+# Check for inconsistent variables 
+unique_values = data['password'].unique()
+print(unique_values)
+
+# Remove leading and trailing whitespace
+data['password'] = data['password'].str.strip()
+
+#For numeric variables, check any outliers and remove them or replace them with a certain value. 
+
+# Create a pivot table to analyze passwords by strength
+pivot_table = pd.pivot_table(data, values='password', index='strength', aggfunc='count')
+
+# Rename the 'password' column to 'password_count' for clarity
+pivot_table.rename(columns={'password': 'password_count'}, inplace=True)
+
+# Display the pivot table
+print("Password Analysis by Strength:")
+print(pivot_table)
+
+import matplotlib.pyplot as plt
+
+
+# Plot a bar chart to visualize the result
+plt.figure(figsize=(10, 6))
+plt.bar(pivot_table.index, pivot_table['password_count'], color='skyblue')
+plt.xlabel('Password Strength')
+plt.ylabel('Number of Passwords')
+plt.title('Password Analysis by Strength')
+plt.xticks(rotation=45)  # Rotate x-axis labels for readability
+
+# Display the bar chart
+plt.tight_layout()
+plt.show()
+
+summary_stats = data.describe()
+print(summary_stats)
+
+data['password_length'] = data['password'].str.len()
+average_password_length = data['password_length'].mean()
+print(f"Average Password Length: {average_password_length:.2f}")
 
 1.  
 
