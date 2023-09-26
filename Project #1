@@ -1,0 +1,40 @@
+Alexis Flack
+Data Analytics 
+Project #1
+
+
+1.  
+
+Data Source : The dataset being used for this analysis is “Password Strength and Vulnerability Dataset” obtained from Kaggle. As a computer science student and cybersecurity major I choose this dataset to learn how to better assist people in keeping their online accounts safe. This dataset contains information related to passwords and their strengths. You can access this dataset here. 
+
+Description : The dataset contains a collection of passwords along with labels that correspond to the data. There are nine categories: rank, password, category, value, time_unit, offline_crack_second, rank_alt, strength, and font_size. These categories rank the popularity of a password, how fast someone can guess a password and how fast someone can crack the password. The data is organized based on the complexity and how resistant the passwords are to attacks. The data contains a large amount of passwords, ensuring there are a minimum of 100 rows. The insights gained from this analysis could be valuable for improving password policies, educating users about secure password practices, and enhancing cybersecurity measures. 
+
+Main Question : What factors contribute to the strength or vulnerability of passwords, and can we identify patterns or trends in password security?
+
+Sub Questions : 
+How does password length correlate with its strength?
+Can we identify specific words or patterns that frequently lead to weak passwords?
+How does the use of personal information in passwords affect their strength?
+
+2. (Done in Jupyter Notebook)
+a. Drop any unwanted features if necessary. 
+b. Check if there are any missing values and address them. 
+c. Check if any duplicates and address them. 
+d. Check the data type of each column and correct them if any. 
+e. For categorical variables, check if there are any inconsistent inputs and address them. 	f. For numeric variables, check any outliers and remove them or replace them with a certain value.  
+
+3.
+Process the data. Use a pivot table to generate the result you want. (Jupyter Notebook)
+Create a graph to visualize the result. (Jupyter Notebook)
+Interpret the result. Explain your findings. 
+
+Interpreting the result of the password strength analysis and the corresponding bar chart, we can gain insights into the distribution of passwords within the dataset. The bar chart shows a relatively high count of weak passwords. Weak passwords are often the easiest to crack, which is a huge security risk. The most common password strength score was “8” compared to the highest rating which was “49”. Strong passwords were so low and far in between that they accounted for less than 10 percent of the password data. A significant count of weak passwords indicates a potential security concern. Users should be educated about the importance of strong password practices. The findings tell us that people should be more educated on the improvement of passwords. Organizations with high security risk (which is most companies that contain a customer database)  may consider enforcing password complexity requirements, periodic password changes, and multi-factor authentication to enhance security. Continuous monitoring of password security trends is crucial. Weak passwords are very common due to the fact they are so easy to remember. In the event of enforcing strong passwords organizations should have secure mechanisms for password recovery and account access in case users forget their strong passwords. This balances security with usability.
+In summary, the analysis of password strengths reveals insights into the overall security posture. It highlights areas where improvements are needed, and it underscores the importance of promoting strong password practices and implementing robust security measures to protect sensitive data and accounts.
+
+4.	Main Findings:
+The project focused on analyzing a dataset of passwords to gain insights into password strength and vulnerability. Here are the main findings from the analysis. The analysis revealed a distribution of passwords across different strength categories. There was a noticeable presence of weak and medium-strength passwords, while strong passwords were less common. The presence of weak and medium-strength passwords suggests potential security vulnerabilities. 
+What Was Not Found:
+While the analysis provided valuable insights into password strengths and weaknesses, there are certain aspects that were not explicitly covered in this project. The analysis did not explore specific password cracking techniques or attempt to crack passwords in the dataset. A more in-depth analysis of password vulnerabilities could involve testing passwords against common cracking methods. The project did not delve into the security of password storage and hashing practices. Evaluating the security of password storage mechanisms is crucial in real-world security assessments. The dataset analysis did not examine password usage patterns, such as password reuse across different accounts or the impact of password policies on user behavior.
+To further explore the topic of password security and vulnerability, the following areas could be investigated. Studying user behavior regarding password creation and management. This could include understanding the prevalence of password reuse, the impact of password manager adoption, and user responses to security education. Investigating alternative authentication methods, such as biometrics or two-factor authentication, to enhance security while reducing reliance on complex passwords.
+In conclusion, password security is a multifaceted and evolving field, and further exploration in the areas mentioned above can provide a more comprehensive understanding of password vulnerability and ways to enhance security practices.
+
